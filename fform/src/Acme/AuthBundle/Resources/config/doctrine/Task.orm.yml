@@ -1,0 +1,13 @@
+# src/Acme/StoreBundle/Resources/config/doctrine/Product.orm.yml
+Acme\AuthBundle\Entity\Task:
+    type: entity
+    table: task
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+        pwd:
+            type: string

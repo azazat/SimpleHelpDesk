@@ -1,0 +1,16 @@
+ {#{% extends 'base.html.twig' %}#}
+ <h1>Welcome to Symfony!</h1>
+ <h2>Hello !</h2>
+ 
+{% block body %}
+<form action="{{ path('acme_auth_homepage') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+
+    <input type="submit" />
+	
+	
+
+</form>
+{{path}}
+
+{% endblock %}

@@ -1,0 +1,70 @@
+<?php
+// src/Acme/TaskBundle/Entity/Task.php
+namespace Acme\AuthBundle\Entity;
+
+class Task
+{
+	protected $id;
+	
+    protected $name;
+
+    protected $pwd;
+
+    
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Task
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set pwd
+     *
+     * @param string $pwd
+     * @return Task
+     */
+    public function setPwd($pwd)
+    {
+        $this->pwd = $pwd;
+
+        return $this;
+    }
+
+    /**
+     * Get pwd
+     *
+     * @return string 
+     */
+    public function getPwd()
+    {
+        return $this->pwd;
+    }
+}

@@ -1,0 +1,11 @@
+acme_auth_homepage:
+    path:     /
+    defaults: { _controller: AcmeAuthBundle:Default:login }
+
+acme_auth_success:
+    path:     /login/success
+    defaults: { _controller: AcmeAuthBundle:Success:success }
+
+download:
+    path:     /login/download
+    defaults: { _controller: AcmeAuthBundle:Download:download }
