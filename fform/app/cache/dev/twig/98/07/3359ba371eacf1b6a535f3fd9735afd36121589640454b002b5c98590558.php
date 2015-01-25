@@ -18,6 +18,11 @@ class __TwigTemplate_98073359ba371eacf1b6a535f3fd9735afd36121589640454b002b5c985
         // line 1
         echo "<h1>Incident_list</h1>
 <br>
+<a href=\"";
+        // line 3
+        echo $this->env->getExtension('routing')->getPath("logout");
+        echo "\">Выход</a>
+
 \t<br>";
     }
 
@@ -26,8 +31,13 @@ class __TwigTemplate_98073359ba371eacf1b6a535f3fd9735afd36121589640454b002b5c985
         return "NGHelpDeskBundle:Incident:incident_my.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  23 => 3,  19 => 1,);
     }
 }

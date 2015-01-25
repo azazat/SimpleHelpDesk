@@ -1,10 +1,10 @@
-ng_help_desk:
-    resource: @NGHelpDeskBundle/Controller
-    type:     annotation
+#№ng_help_desk:    resource: @NGHelpDeskBundle/Controller
+#    type:     annotation
+#
 
-#ng_help_desk:
-#    resource: "@NGHelpDeskBundle/Resources/config/routing.yml"
-#   prefix:   /
+ng_help_desk:
+    resource: "@NGHelpDeskBundle/Resources/config/routing.yml"
+    prefix:   /
 
 #acme_auth:
 #    resource: "@AcmeAuthBundle/Resources/config/routing.yml"

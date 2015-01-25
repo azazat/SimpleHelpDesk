@@ -129,11 +129,6 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\DefaultController::indexAction',  '_route' => 'ng_help_desk_homepage',);
         }
 
-        // incident_my
-        if ($pathinfo === '/incident') {
-            return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\IncidentController::incidentMyAction',  '_route' => 'incident_my',);
-        }
-
         if (0 === strpos($pathinfo, '/login')) {
             // login_route
             if ($pathinfo === '/login') {
@@ -142,9 +137,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             // login_check
             if ($pathinfo === '/login_check') {
-                return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\SecurityController::loginCheckAction',  '_route' => 'login_check',);
+                return array('_route' => 'login_check');
             }
 
+        }
+
+        // incident_my
+        if ($pathinfo === '/incident') {
+            return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\IncidentController::incidentMyAction',  '_route' => 'incident_my',);
+        }
+
+        // logout
+        if ($pathinfo === '/logout') {
+            return array('_route' => 'logout');
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

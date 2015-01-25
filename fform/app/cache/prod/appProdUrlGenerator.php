@@ -14,9 +14,9 @@ class appProdUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerat
 {
     private static $declaredRoutes = array(
         'ng_help_desk_homepage' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\DefaultController::indexAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/',    ),  ),  4 =>   array (  ),),
-        'incident_my' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\IncidentController::incidentMyAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/incident',    ),  ),  4 =>   array (  ),),
         'login_route' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\SecurityController::loginAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login',    ),  ),  4 =>   array (  ),),
-        'login_check' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\SecurityController::loginCheckAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login_check',    ),  ),  4 =>   array (  ),),
+        'login_check' => array (  0 =>   array (  ),  1 =>   array (  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login_check',    ),  ),  4 =>   array (  ),),
+        'incident_my' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\IncidentController::incidentMyAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/incident',    ),  ),  4 =>   array (  ),),
     );
 
     /**
