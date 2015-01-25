@@ -120,24 +120,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // acme_auth_homepage
+        // ng_help_desk_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'acme_auth_homepage');
+                return $this->redirect($pathinfo.'/', 'ng_help_desk_homepage');
             }
 
-            return array (  '_controller' => 'Acme\\AuthBundle\\Controller\\DefaultController::loginAction',  '_route' => 'acme_auth_homepage',);
+            return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\DefaultController::indexAction',  '_route' => 'ng_help_desk_homepage',);
+        }
+
+        // incident_my
+        if ($pathinfo === '/incident') {
+            return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\IncidentController::incidentMyAction',  '_route' => 'incident_my',);
         }
 
         if (0 === strpos($pathinfo, '/login')) {
-            // acme_auth_success
-            if ($pathinfo === '/login/success') {
-                return array (  '_controller' => 'Acme\\AuthBundle\\Controller\\SuccessController::successAction',  '_route' => 'acme_auth_success',);
+            // login_route
+            if ($pathinfo === '/login') {
+                return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login_route',);
             }
 
-            // download
-            if ($pathinfo === '/login/download') {
-                return array (  '_controller' => 'Acme\\AuthBundle\\Controller\\DownloadController::downloadAction',  '_route' => 'download',);
+            // login_check
+            if ($pathinfo === '/login_check') {
+                return array (  '_controller' => 'NG\\HelpDeskBundle\\Controller\\SecurityController::loginCheckAction',  '_route' => 'login_check',);
             }
 
         }

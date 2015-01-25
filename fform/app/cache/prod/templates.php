@@ -79,6 +79,10 @@
   'DoctrineBundle:Collector:explain.html.twig' => 'C:\\xampp\\htdocs\\sf\\fform\\vendor\\doctrine\\doctrine-bundle\\Doctrine\\Bundle\\DoctrineBundle/Resources/views/Collector/explain.html.twig',
   'AcmeAuthBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\sf\\fform\\src\\Acme\\AuthBundle/Resources/views/Default/index.html.twig',
   'AcmeAuthBundle:Default:success.html.twig' => 'C:\\xampp\\htdocs\\sf\\fform\\src\\Acme\\AuthBundle/Resources/views/Default/success.html.twig',
+  'NGHelpDeskBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\sf\\fform\\src\\NG\\HelpDeskBundle/Resources/views/Default/index.html.twig',
+  'NGHelpDeskBundle:Incident:incident_my.html.twig' => 'C:\\xampp\\htdocs\\sf\\fform\\src\\NG\\HelpDeskBundle/Resources/views/Incident/incident_my.html.twig',
+  'NGHelpDeskBundle:Security:login.html.twig' => 'C:\\xampp\\htdocs\\sf\\fform\\src\\NG\\HelpDeskBundle/Resources/views/Security/login.html.twig',
+  'NGHelpDeskBundle:Security:success.html.twig' => 'C:\\xampp\\htdocs\\sf\\fform\\src\\NG\\HelpDeskBundle/Resources/views/Security/success.html.twig',
   '::base.html.twig' => 'C:/xampp/htdocs/sf/fform/app/Resources\\views/base.html.twig',
   ':default:index.html.twig' => 'C:/xampp/htdocs/sf/fform/app/Resources\\views/default/index.html.twig',
 );

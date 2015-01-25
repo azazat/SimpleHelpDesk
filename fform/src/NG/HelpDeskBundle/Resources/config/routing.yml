@@ -1,0 +1,10 @@
+ng_help_desk_homepage:
+    path:   /
+    defaults: { _controller: NGHelpDeskBundle:Default:index }
+
+login:
+    path:   /login
+    defaults: { _controller: NGHelpDeskBundle:Security:login }
+
+login_check:
+    path:   /login_check

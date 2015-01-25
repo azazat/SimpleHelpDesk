@@ -13,9 +13,10 @@ use Psr\Log\LoggerInterface;
 class appProdUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerator
 {
     private static $declaredRoutes = array(
-        'acme_auth_homepage' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Acme\\AuthBundle\\Controller\\DefaultController::loginAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/',    ),  ),  4 =>   array (  ),),
-        'acme_auth_success' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Acme\\AuthBundle\\Controller\\SuccessController::successAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login/success',    ),  ),  4 =>   array (  ),),
-        'download' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Acme\\AuthBundle\\Controller\\DownloadController::downloadAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login/download',    ),  ),  4 =>   array (  ),),
+        'ng_help_desk_homepage' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\DefaultController::indexAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/',    ),  ),  4 =>   array (  ),),
+        'incident_my' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\IncidentController::incidentMyAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/incident',    ),  ),  4 =>   array (  ),),
+        'login_route' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\SecurityController::loginAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login',    ),  ),  4 =>   array (  ),),
+        'login_check' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'NG\\HelpDeskBundle\\Controller\\SecurityController::loginCheckAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login_check',    ),  ),  4 =>   array (  ),),
     );
 
     /**

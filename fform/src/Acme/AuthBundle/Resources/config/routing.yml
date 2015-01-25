@@ -1,11 +1,11 @@
 acme_auth_homepage:
-    path:     /
+    path:     /asd
     defaults: { _controller: AcmeAuthBundle:Default:login }
 
 acme_auth_success:
-    path:     /login/success
+    path:     /daslas/success
     defaults: { _controller: AcmeAuthBundle:Success:success }
 
 download:
-    path:     /login/download
+    path:     /dasdalogin/download
     defaults: { _controller: AcmeAuthBundle:Download:download }

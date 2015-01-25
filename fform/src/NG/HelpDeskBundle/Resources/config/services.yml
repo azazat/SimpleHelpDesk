@@ -1,0 +1,7 @@
+parameters:
+#    ng_help_desk.example.class: NG\HelpDeskBundle\Example
+
+services:
+#    ng_help_desk.example:
+#        class: %ng_help_desk.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
