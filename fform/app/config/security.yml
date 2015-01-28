@@ -1,23 +1,25 @@
 security:
     encoders:
-        #NG\HelpDeskBundle\Entity\User: 
-        Symfony\Component\Security\Core\User\User:
+        Symfony\Component\Security\Core\User\User: plaintext
+        NG\HelpDeskBundle\Entity\User:
             algorithm: bcrypt
             cost: 12
 
     providers:
-    #    administrators:
-    #        entity: { class: NGHelpDeskBundle:User, property: username }
-        in_memory:
-            memory:
-                users:
-                    user:
-                        password: user
-                        roles: 'ROLE_USER'
-                    admin:
-                        password: $2a$12$5quR/MfykVaMaDX8ZeVppuSKPHMf5R5ibUEl3o9r2uK/D0RTQUYKe
-                        roles: 'ROLE_ADMIN'
-
+        administrators:
+            entity: { class: NGHelpDeskBundle:User, property: username }
+    #    in_memory:
+     #       memory:
+      #          users:
+       #             user:
+        #                password: user
+         #          admin:
+          #              password: $2a$12$5quR/MfykVaMaDX8ZeVppuSKPHMf5R5ibUEl3o9r2uK/D0RTQUYKe
+           #             roles: 'ROLE_ADMIN'
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+        
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
